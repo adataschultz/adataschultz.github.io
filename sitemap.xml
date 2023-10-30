@@ -6,7 +6,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://adataschultz.github.io/</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
@@ -20,35 +20,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://adataschultz.github.io/archives.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/author/andrew-schultz.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/authors.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/categories.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/category/projects.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
@@ -83,105 +83,105 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://adataschultz.github.io/tag/bert.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/bow.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/class-imbalance.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/collaborative-filtering.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/deep-learning.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/hyperopt.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/machine-learning.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/maritime-data-science.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/optuna.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/oversampling.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/ranking.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/smote.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/svd.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tag/tf-idf.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://adataschultz.github.io/tags.html</loc>
-<lastmod>2023-10-30T02:00:22-00:00</lastmod>
+<lastmod>2023-10-30T03:05:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
