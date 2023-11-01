@@ -1253,7 +1253,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </ul>
 <h1 id="Data-and-Preprocessing"><code>Data and Preprocessing</code><a class="anchor-link" href="#Data-and-Preprocessing">¶</a></h1><p>   <font size="4">The data was retrieved from <a href="https://www.yelp.com/dataset">Yelp Open Dataset</a>. These are separate <code>json</code> files for the reviews, businesses, users, tip and photo inforation. A data warehouse is needed to be constructed containing as much relevant information for downstream analyses that can be queried for more insight. The <code>photo.json</code> was not utilized in constructing a data warehouse.</font></p>
 <p>   <font size="4">The code that was used for preprocessing and EDA can be found <a href="https://github.com/adataschultz/Yelp_Reviews/blob/main/Yelp_Reviews_Preprocessing_EDA.py">Yelp Reviews Github repository</a>. First, the environment is needed to be set up by importing the dependencies, setting the options for viewing/examining the data, the resolution of the graphs/charts, setting the seed for processing/computations with the data and the directory structure where the data is read from/stored.</font></p>
-<p>   <font size="4">For the initial exploratory data analysis (EDA), let's define a function to examine the dimensions of the rows and columns of each set, the unique and missing values as well as the data types of the separate `json files containing the reviews, businesses, users, tip, and checkin information. This function can be implemented after reading the data and dropping duplicates. Since some of the information is stored as dictionaries, these need to be converted to strings for dropping duplicates after joining the various sets.</font></p>
+<p>   <font size="4">For the initial exploratory data analysis (EDA), let's define a function to examine the dimensions of the rows and columns of each set, the unique and missing values as well as the data types of the separate <code>json</code> files containing the reviews, businesses, users, tip, and checkin information. This function can be implemented after reading the data and dropping duplicates. Since some of the information is stored as dictionaries, these need to be converted to strings for dropping duplicates after joining the various sets.</font></p>
 </div>
 </div>
 </div>
@@ -1966,7 +1966,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -2066,7 +2066,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -2172,7 +2172,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Business-Hours"><code>Business Hours</code><a class="anchor-link" href="#Business-Hours">¶</a></h2><p>   <font size="4">Initially, <code>hours_business</code> is in the format of a dictionary with the day and the hours that the business is operational. There is a lot of information contained within original feature so processing this into a non-dictionary feature will allow for more features to be created and thus potential insight. Let's create a copy of the original <code>hours_business</code> to compare the processing. A <code>lambda</code> function can be utilized that splits the original feature with splitting the current string by `,` and keeping the <code>business_id</code> with the information. This creates duplicates and missing data so they need to be removed. Some of the information within the original feature contained differences in the spacing so this needs to be normalized to maximize the grain of information. This includes the presence of brackets and spacing. The original <code>hours_business</code> was set as the index to monitor for accurate processing. After, the number of how many unique business day/hours can be calculated and then index reset to compare.</font></p>
+<h2 id="Business-Hours"><code>Business Hours</code><a class="anchor-link" href="#Business-Hours">¶</a></h2><p>   <font size="4">Initially, <code>hours_business</code> is in the format of a dictionary with the day and the hours that the business is operational. There is a lot of information contained within original feature so processing this into a non-dictionary feature will allow for more features to be created and thus potential insight. Let's create a copy of the original <code>hours_business</code> to compare the processing. A <code>lambda</code> function can be utilized that splits the original feature with splitting the current string by <code>,</code> and keeping the <code>business_id</code> with the information. This creates duplicates and missing data so they need to be removed. Some of the information within the original feature contained differences in the spacing so this needs to be normalized to maximize the grain of information. This includes the presence of brackets and spacing. The original <code>hours_business</code> was set as the index to monitor for accurate processing. After, the number of how many unique business day/hours can be calculated and then index reset to compare.</font></p>
 </div>
 </div>
 </div>
@@ -2241,7 +2241,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -2376,7 +2376,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -2481,7 +2481,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -2672,7 +2672,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -2803,7 +2803,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -2952,7 +2952,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -3775,7 +3775,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>   <font size="4">The majority of users have only written a small number of reviews demonstrated by the right skewed histogram while the the average stars by the users is more left skewed around 4 stars.</font></p>
-<p>   <font size="4">Box-and-whisker plots are another method to visualize the quantitative variables from the `User set. We can iterate through the features using a <code>for</code> loop.</font></p>
+<p>   <font size="4">Box-and-whisker plots are another method to visualize the quantitative variables from the <code>User</code> set. We can iterate through the features using a <code>for</code> loop.</font></p>
 </div>
 </div>
 </div>
@@ -3847,7 +3847,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -3958,7 +3958,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -4328,7 +4328,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>   <font size="4">The top five categories are <code>Restaurants</code>, <code>Food</code>, <code>Nightlife</code>, <code>Bars</code> and <code>American(New)</code>. This contains a high similarity between groups, so focusing on the food related businesses sounds like a worthwhile venture.</font></p>
 <p>   <font size="4">Now, we can write the processed data to a <code>.csv</code> file and proceed to processing the text data from the <code>text_reviews</code> feature.</font></p>
-<h1 id="NLP-Preprocessing"><code>NLP Preprocessing</code><a class="anchor-link" href="#NLP-Preprocessing">¶</a></h1><p>   <font size="4">Before preprocessing the reviews, let's download some word sets for cleaning the text in the reviews. We can utilize <code>en_core_web_lg</code> from the <code>spaCy</code> library as well as  <code>wordnet</code>, <code>punkt</code> and <code>stopwords</code> from the <code>NLTK</code> library. To download <code>en_core_web_lg</code> from <code>spaCy</code>, run <code>!python -m spacy download en_core_web_lg</code> in the notebook environment or without the `!` if utilizing terminal. Then this can be loaded into the notebook after importing the library.</font></p>
+<h1 id="NLP-Preprocessing"><code>NLP Preprocessing</code><a class="anchor-link" href="#NLP-Preprocessing">¶</a></h1><p>   <font size="4">Before preprocessing the reviews, let's download some word sets for cleaning the text in the reviews. We can utilize <code>en_core_web_lg</code> from the <code>spaCy</code> library as well as  <code>wordnet</code>, <code>punkt</code> and <code>stopwords</code> from the <code>NLTK</code> library. To download <code>en_core_web_lg</code> from <code>spaCy</code>, run <code>!python -m spacy download en_core_web_lg</code> in the notebook environment or without the <code>!</code> if utilizing terminal. Then this can be loaded into the notebook after importing the library.</font></p>
 <p>   <font size="4">Now, we can subset the features the previous plots showed that impact the distribution of the reviews.</font></p>
 </div>
 </div>
@@ -4756,7 +4756,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>   <font size="4">Building on the first class object that was utilized to process the non-word components, we can define a more condensed one to process the words in the text data. Upon first pass, there were non-UTF8 characters which existed in the set, which might have derived from exporting the data and not processing it to the full entirety in a single session after importing, so those few rows had to be located and removed. When using a library that specifies the words in the library are <code>stopwords</code>, it might be context driven given the text data that was used to derive that definition. Therefore, careful inspection of what is used as the reference word bank dictionary as well as fine tuning might be required to optimally solve the tasked problem. Potentially, adding more common words to the <code>stopwords_list</code> will allow for less prevalent words, which might reveal more insightful text information to not be masked.</font></p>
-<p>   <font size="4">Let's start by tokenizing using <code>nltk</code> followed by removing the stop words from the reviews using <code>nltk.corpus</code>. Then the text can be broken down to the root words using the `WordNetLemmatizer and the processed string can then be joined as one single text string.</font></p>
+<p>   <font size="4">Let's start by tokenizing using <code>nltk</code> followed by removing the stop words from the reviews using <code>nltk.corpus</code>. Then the text can be broken down to the root words using the <code>WordNetLemmatizer</code> and the processed string can then be joined as one single text string.</font></p>
 </div>
 </div>
 </div>
@@ -5022,8 +5022,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>   <font size="4">Word clouds can be utilized to visualize the words present, but let's examine on a more granular level by defining a function <code>get_all_words</code> to find all of the words present in the set and then <code>FreqDist</code> can be used to generate the frequency of the words in the set. Let's first find the 100 most common words in 5 star reviews and write the list to a `.csv` file. Then perform the same operations with the lowest stars set.</font></p>
-<p>   <font size="4">We can then find the top 10 words that are in both the 5 and 1 &amp; 2 star review sets by converting the list to a dataframe using an inner merge with `word as the key.</font></p>
+<p>   <font size="4">Word clouds can be utilized to visualize the words present, but let's examine on a more granular level by defining a function <code>get_all_words</code> to find all of the words present in the set and then <code>FreqDist</code> can be used to generate the frequency of the words in the set. Let's first find the 100 most common words in 5 star reviews and write the list to a <code>.csv</code> file. Then perform the same operations with the lowest stars set.</font></p>
+<p>   <font size="4">We can then find the top 10 words that are in both the 5 and 1 &amp; 2 star review sets by converting the list to a dataframe using an inner merge with <code>word</code> as the key.</font></p>
 </div>
 </div>
 </div>
@@ -5312,7 +5312,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Bag-of-Words-(BoW)-and-Term-Frequency-Inverse-Document-Frequency-(TF-IDF)"><code>Bag of Words (BoW) and Term Frequency-Inverse Document Frequency (TF-IDF)</code><a class="anchor-link" href="#Bag-of-Words-(BoW)-and-Term-Frequency-Inverse-Document-Frequency-(TF-IDF)">¶</a></h1><p>   <font size="4">A bag-of-words (<code>BoW</code>) model is a method to extract the features from text information to use in modeling. It was first introduced in Zellig Harris's 1954 publication <a href="https://www.tandfonline.com/doi/abs/10.1080/00437956.1954.11659520">Distributional Structure</a>. The words within the text are compiled into a <code>bag</code> of words where the order and the structure of the words in the text information is not considered. The text is preprocessed using the methods in the <code>NLP Preprocessing</code> section and a vocabulary is created by determining the frequency of each word within the text. The text is then converted into a vector since numerical values are needed for modeling</font></p>
-<p>   <font size="4">One limitation of using the frequency of a word for the score is highly frequent words begin to generate larger scores when they do not contain insightful information compared to less utilized words, resulting in negative effects when modeling. Therefore, we can leverage rescaling the frequency that words appear so that the scores for the frequent words are penalized. This was suggested in <a href="https://dl.acm.org/doi/10.5555/106765.106782">A Statistical Interpretation of Term Specificity and Its Application in Retrieval</a>. We can generate a score of the frequency of the word in each of the separate reviews defined as <code>Term Frequency</code> and the generate another score for how important this word is across all of the text data defined as `Inverse Document Frequency. Then a weighted score can be generated where all of words are not considered as equally important or interesting. This score then allows for the words which are distinct (potentially containing useful information) to be highlighted. <code>TF-IDF</code> is a statistical measure that considers the importance of the words in the text which can be utilized in modeling after using text vectorization.</font></p>
+<p>   <font size="4">One limitation of using the frequency of a word for the score is highly frequent words begin to generate larger scores when they do not contain insightful information compared to less utilized words, resulting in negative effects when modeling. Therefore, we can leverage rescaling the frequency that words appear so that the scores for the frequent words are penalized. This was suggested in <a href="https://dl.acm.org/doi/10.5555/106765.106782">A Statistical Interpretation of Term Specificity and Its Application in Retrieval</a>. We can generate a score of the frequency of the word in each of the separate reviews defined as <code>Term Frequency</code> and the generate another score for how important this word is across all of the text data defined as <code>Inverse Document Frequency</code>. Then a weighted score can be generated where all of words are not considered as equally important or interesting. This score then allows for the words which are distinct (potentially containing useful information) to be highlighted. <code>TF-IDF</code> is a statistical measure that considers the importance of the words in the text which can be utilized in modeling after using text vectorization.</font></p>
 <p>   <font size="4">The <code>BoW</code> and <code>TF-IDF</code> notebooks can be found
 <a href="https://github.com/adataschultz/Yelp_Reviews/tree/main/Models/DL/BoW_TFIDF/SentimentPolarity/Notebooks_Scripts">here</a>
 for the <code>Sentiment</code> set and <a href="https://github.com/adataschultz/Yelp_Reviews/tree/main/Models/DL/BoW_TFIDF/ReviewStars/Notebooks_Scripts">here</a>for the <code>Stars on Reviews</code> group.</font></p>
@@ -5494,7 +5494,7 @@ for the <code>Sentiment</code> set and <a href="https://github.com/adataschultz/
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe table-striped table">
+<table border="1" class="table-striped dataframe table">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -5592,7 +5592,7 @@ for the <code>Sentiment</code> set and <a href="https://github.com/adataschultz/
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>   <font size="4">Surprisingly, there are 1 star reviews that are positive, and 5 star reviews which are negative. To prepare the target feature for various methods for classification, we need to recode the string to binary numerical values, so let's define <code>Negative</code> as zero and <code>Positive</code> as one, and the 1 and 2 <code>stars_reviews</code> as zero and the five star reviews as one with the objective of predicting what contributes more based on the text within a review for a higher review rating and <code>Positive</code> review.</font></p>
-<p>Then we can select the reviews with negative sentiment, shuffle and then sample 20,000 reviews. For a balanced set, let's use the same methods for the positive sentiment reviews. Then convert the review to a <code>string</code> and <code>sentiment</code> to an integer.&lt;/font&gt;</p>
+<p>   <font size="4">Then we can select the reviews with negative sentiment, shuffle and then sample 20,000 reviews. For a balanced set, let's use the same methods for the positive sentiment reviews. Then convert the review to a <code>string</code> and <code>sentiment</code> to an integer.</font></p>
 </div>
 </div>
 </div>
@@ -5652,7 +5652,7 @@ for the <code>Sentiment</code> set and <a href="https://github.com/adataschultz/
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Preprocess-Text"><code>Preprocess Text</code><a class="anchor-link" href="#Preprocess-Text">¶</a></h3><p>   <font size="4">The reviews were previously processed by removing non-words, converting to lowercase, removal of stop words and lemmatized. The reviews need to be re-tokenized, so let's use `wordpunct_tokenize for this task. We can also remove rare words if they are found only in a small frequency in the tokenized text. Then we can construct the <code>BoW vector</code> and <code>TF-IDF vector</code> which will be used when modeling.</font></p>
+<h3 id="Preprocess-Text"><code>Preprocess Text</code><a class="anchor-link" href="#Preprocess-Text">¶</a></h3><p>   <font size="4">The reviews were previously processed by removing non-words, converting to lowercase, removal of stop words and lemmatized. The reviews need to be re-tokenized, so let's use <code>wordpunct_tokenize</code> for this task. We can also remove rare words if they are found only in a small frequency in the tokenized text. Then we can construct the <code>BoW vector</code> and <code>TF-IDF vector</code> which will be used when modeling.</font></p>
 </div>
 </div>
 </div>
@@ -5687,7 +5687,7 @@ for the <code>Sentiment</code> set and <a href="https://github.com/adataschultz/
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>   <font size="4">To further preprocess the text data for modeling, let's define some parameters for the maximum length of the review, maximum vocab size, and batch size for loading the data.</font></p>
-<p>   <font size="4">Now we can define a class <code>YelpReviewsDataset</code> which will process the data from raw string into two vectors, <code>Bag of Words</code> and <code>Term Frequency Inverse Document Frequency</code>, to be used for modeling. We can set the data to process as <code>df</code>, tokenize the text string and build the most common tokens bound by the defined maximum vocabulary size. Then replace the rare words with `<unk>` and remove the sequences with only `<unk>`. Next, build the vocabulary and convert the tokens to indexes. Now we can build the <code>BoW</code> vector and build the <code>TF-IDF</code> vector using the <code>TfidfVectorizer</code> with the input in <code>list</code> format. This then returns feature vectors and target.</unk></unk></font></p>
+<p>   <font size="4">Now we can define a class <code>YelpReviewsDataset</code> which will process the data from raw string into two vectors, <code>Bag of Words</code> and <code>Term Frequency Inverse Document Frequency</code>, to be used for modeling. We can set the data to process as <code>df</code>, tokenize the text string and build the most common tokens bound by the defined maximum vocabulary size. Then replace the rare words with <code>UNK</code> and remove the sequences with only <code>UNK</code>. Next, build the vocabulary and convert the tokens to indexes. Now we can build the <code>BoW</code> vector and build the <code>TF-IDF</code> vector using the <code>TfidfVectorizer</code> with the input in <code>list</code> format. This then returns feature vectors and target.</font></p>
 </div>
 </div>
 </div>
@@ -5772,8 +5772,7 @@ for the <code>Sentiment</code> set and <a href="https://github.com/adataschultz/
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>   <font size="4">Now, we can load the data using the described class with the specified &lt;/code&gt;MAX_VOCAB = 10000&lt;/code&gt; and &lt;/code&gt;MAX_LEN = 300&lt;/code&gt;.</font></p>
-<p>&lt;/font&gt;</p>
+<p>   <font size="4">Now, we can load the data using the described class with the specified <code>MAX_VOCAB = 10000</code> and <code>MAX_LEN = 300</code>.</font></p>
 </div>
 </div>
 </div>
@@ -6710,7 +6709,7 @@ for the <code>Sentiment</code> set and <a href="https://github.com/adataschultz/
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><code>Term Frequency-Inverse Document Frequency (TF-IDF)`</code></h1>
+<h1 id="Term-Frequency-Inverse-Document-Frequency-(TF-IDF)"><code>Term Frequency-Inverse Document Frequency (TF-IDF)</code><a class="anchor-link" href="#Term-Frequency-Inverse-Document-Frequency-(TF-IDF)">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7282,7 +7281,7 @@ for the <code>Sentiment</code> set and <a href="https://github.com/adataschultz/
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Bidirectional-Long-Short-Term-Memory-Networks-(LSTM)"><code>Bidirectional Long Short Term Memory Networks (LSTM)</code><a class="anchor-link" href="#Bidirectional-Long-Short-Term-Memory-Networks-(LSTM)">¶</a></h1><p>   <font size="4"><a href="https://deeplearning.cs.cmu.edu/F20/document/readings/Bidirectional%20Recurrent%20Neural%20Networks.pdf">Bidirectional LSTMs</a> are an extension of traditional <a href="https://deeplearning.cs.cmu.edu/F23/document/readings/LSTM.pdf">LSTMS</a> that can improve model performance on sequence classification problems by allowing the input data to leverage information from both the past and the future. The <code>LSTM</code> is trained simultaneously
+<h1 id="Bidirectional-Long-Short-Term-Memory-Networks-(LSTM)"><code>Bidirectional Long Short Term Memory Networks (LSTM)</code><a class="anchor-link" href="#Bidirectional-Long-Short-Term-Memory-Networks-(LSTM)">¶</a></h1><p>   <font size="4"><a href="https://deeplearning.cs.cmu.edu/F20/document/readings/Bidirectional%20Recurrent%20Neural%20Networks.pdf">Bidirectional LSTMs</a> are an extension of traditional <a href="https://deeplearning.cs.cmu.edu/F23/document/readings/LSTM.pdf">LSTMs</a> that can improve model performance on sequence classification problems by allowing the input data to leverage information from both the past and the future. The <code>LSTM</code> is trained simultaneously
 in the positive and negative time direction with the input sequence.</font></p>
 <p>   <font size="4">The notebooks can be found
 <a href="https://github.com/adataschultz/Yelp_Reviews/blob/main/Models/DL/LSTM/SentimentPolarity/Notebooks_Scripts/LSTM_SP.ipynb">here</a> for <code>Sentiment</code> and  <a href="https://github.com/adataschultz/Yelp_Reviews/blob/main/Models/DL/LSTM/ReviewStars/Notebooks_Scripts/LSTM_RS.ipynb">here</a> for <code>Stars on Reviews</code>.</font></p>
@@ -7292,7 +7291,7 @@ in the positive and negative time direction with the input sequence.</font></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Sentiment"><code>Sentiment</code><a class="anchor-link" href="#Sentiment">¶</a></h2><p>   <font size="4">Let's first set up the environment by importing the necessary packages and examining the <code>CUDA and NVIDIA GPU Information</code> as well as the <code>Tensorflow</code> and <code>Keras</code> versions for the runtime.</font></p>
+<h2 id="Sentiment"><code>Sentiment</code><a class="anchor-link" href="#Sentiment">¶</a></h2><p>   <font size="4">Let's first set up the environment by importing the necessary packages and examining the <code>CUDA</code> and <code>NVIDIA GPU</code> information as well as the <code>Tensorflow</code> and <code>Keras</code> versions for the runtime.</font></p>
 </div>
 </div>
 </div>
@@ -7604,7 +7603,6 @@ in the positive and negative time direction with the input sequence.</font></p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>   <font size="4">The model can now be trained for 5 epochs using <code>BATCH_SIZE=256</code> with the defined <code>callbacks_list</code> and then saved.</font></p>
-<p>&lt;/font&gt;</p>
 </div>
 </div>
 </div>
@@ -8888,10 +8886,10 @@ in the positive and negative time direction with the input sequence.</font></p>
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="c4fcebf6-0e4a-4955-87dc-74d4b5f0d0df"></div>
+<div id="c69303fb-e3f9-4579-b5ee-983203859acf"></div>
 <div class="output_subarea output_widget_view">
 <script type="text/javascript">
-var element = $('#c4fcebf6-0e4a-4955-87dc-74d4b5f0d0df');
+var element = $('#c69303fb-e3f9-4579-b5ee-983203859acf');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "23dcdf028b974a09a3bccacfb2e8eb40", "version_major": 2, "version_minor": 0}
@@ -8900,10 +8898,10 @@ var element = $('#c4fcebf6-0e4a-4955-87dc-74d4b5f0d0df');
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div id="6a895abf-ecdc-486c-a5f2-2a6c3d749f52"></div>
+<div id="316f319c-cb3b-45dd-a5a0-5ecec09ecc0a"></div>
 <div class="output_subarea output_widget_view">
 <script type="text/javascript">
-var element = $('#6a895abf-ecdc-486c-a5f2-2a6c3d749f52');
+var element = $('#316f319c-cb3b-45dd-a5a0-5ecec09ecc0a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "e4ab35d4ce71478a951c98e9f09278d8", "version_major": 2, "version_minor": 0}
@@ -8912,10 +8910,10 @@ var element = $('#6a895abf-ecdc-486c-a5f2-2a6c3d749f52');
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div id="a4cd7a45-dec2-48d1-8f11-c421c0500917"></div>
+<div id="865f633c-2b2f-4dbe-9fcf-314f6c95c01a"></div>
 <div class="output_subarea output_widget_view">
 <script type="text/javascript">
-var element = $('#a4cd7a45-dec2-48d1-8f11-c421c0500917');
+var element = $('#865f633c-2b2f-4dbe-9fcf-314f6c95c01a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "f682112102fe4c758ea1bd161c555e08", "version_major": 2, "version_minor": 0}
@@ -9156,10 +9154,10 @@ var element = $('#a4cd7a45-dec2-48d1-8f11-c421c0500917');
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="e52f5bda-a007-40c6-b638-c02254d1ca52"></div>
+<div id="f698d76f-b7bd-4d06-83ca-430dad4d5e54"></div>
 <div class="output_subarea output_widget_view">
 <script type="text/javascript">
-var element = $('#e52f5bda-a007-40c6-b638-c02254d1ca52');
+var element = $('#f698d76f-b7bd-4d06-83ca-430dad4d5e54');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "6309082015ae4181a86ecd482325a864", "version_major": 2, "version_minor": 0}
@@ -9541,10 +9539,10 @@ var element = $('#e52f5bda-a007-40c6-b638-c02254d1ca52');
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="630f3669-cb81-4cae-8222-22dbc6ee91ac"></div>
+<div id="bcd5783e-fb9b-4ef7-a2ed-84978a69175d"></div>
 <div class="output_subarea output_widget_view">
 <script type="text/javascript">
-var element = $('#630f3669-cb81-4cae-8222-22dbc6ee91ac');
+var element = $('#bcd5783e-fb9b-4ef7-a2ed-84978a69175d');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "c7244f754e454c93979d2d4e5e68b330", "version_major": 2, "version_minor": 0}
